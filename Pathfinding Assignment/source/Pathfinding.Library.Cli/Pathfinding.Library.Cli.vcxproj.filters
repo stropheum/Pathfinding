@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="ManagedGraph.h">
+      <Filter>ManagedGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="ManagedGridHelper.h">
+      <Filter>ManagedGridHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="ManagedNode.h">
+      <Filter>ManagedNode</Filter>
+    </ClInclude>
+    <ClInclude Include="ManagedPoint.h">
+      <Filter>ManagedPoint</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Precompiled Header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="ManagedGraph.cpp">
+      <Filter>ManagedGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="ManagedGridHelper.cpp">
+      <Filter>ManagedGridHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="ManagedNode.cpp">
+      <Filter>ManagedNode</Filter>
+    </ClCompile>
+    <ClCompile Include="ManagedPoint.cpp">
+      <Filter>ManagedPoint</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Precompiled Header</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ManagedGraph">
+      <UniqueIdentifier>{6ea3d72e-ae0e-4c00-8d9b-e6c376cb1632}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ManagedGridHelper">
+      <UniqueIdentifier>{e9cc6607-8495-4638-88fd-4e67891cb599}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ManagedNode">
+      <UniqueIdentifier>{c4520e08-a287-4a8f-a9c0-66c75c03c6de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ManagedPoint">
+      <UniqueIdentifier>{a1f6ca97-aa50-4175-a932-772850d6cbcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Precompiled Header">
+      <UniqueIdentifier>{b5bcb89f-edf5-43b9-891f-c3d2f09c6d22}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

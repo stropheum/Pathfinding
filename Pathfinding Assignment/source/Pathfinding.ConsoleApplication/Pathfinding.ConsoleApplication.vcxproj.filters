@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>Precompiled Header</Filter>
+    </ClCompile>
+    <ClCompile Include="Program.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Grid.grid">
+      <Filter>Grids</Filter>
+    </None>
+    <None Include="NoPathGrid.grid">
+      <Filter>Grids</Filter>
+    </None>
+    <None Include="XGonnaGridItToYou.grid">
+      <Filter>Grids</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Grids">
+      <UniqueIdentifier>{8fa781f0-4fd3-489c-85e6-2ea2cb244307}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Precompiled Header">
+      <UniqueIdentifier>{7e788145-7d24-49ec-90d9-c1ac40ae68fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{ba1c51c0-4764-41eb-b104-35a553f0e11a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>Precompiled Header</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

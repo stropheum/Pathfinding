@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Graph.cpp">
+      <Filter>Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="GridHelper.cpp">
+      <Filter>GridHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <Filter>Node</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Precompiled Header</Filter>
+    </ClCompile>
+    <ClCompile Include="Point.cpp">
+      <Filter>Point</Filter>
+    </ClCompile>
+    <ClCompile Include="StopWatch.cpp">
+      <Filter>StopWatch</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="AStarPathFinder.cpp">
+      <Filter>Search Algorithms\A%2a</Filter>
+    </ClCompile>
+    <ClCompile Include="BreadthFirstPathFinder.cpp">
+      <Filter>Search Algorithms\Breadth-First</Filter>
+    </ClCompile>
+    <ClCompile Include="GreedyBestFirstPathFinder.cpp">
+      <Filter>Search Algorithms\Greedy Best-First</Filter>
+    </ClCompile>
+    <ClCompile Include="DijsktraPathFinder.cpp">
+      <Filter>Search Algorithms\Dijsktra%27s Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="IPathFinder.cpp">
+      <Filter>Search Algorithms\Interface</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Graph.h">
+      <Filter>Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="GridHelper.h">
+      <Filter>GridHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>Node</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Precompiled Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Point.h">
+      <Filter>Point</Filter>
+    </ClInclude>
+    <ClInclude Include="StopWatch.h">
+      <Filter>StopWatch</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="AStarPathFinder.h">
+      <Filter>Search Algorithms\A%2a</Filter>
+    </ClInclude>
+    <ClInclude Include="BreadthFirstPathFinder.h">
+      <Filter>Search Algorithms\Breadth-First</Filter>
+    </ClInclude>
+    <ClInclude Include="GreedyBestFirstPathFinder.h">
+      <Filter>Search Algorithms\Greedy Best-First</Filter>
+    </ClInclude>
+    <ClInclude Include="DijsktraPathFinder.h">
+      <Filter>Search Algorithms\Dijsktra%27s Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="IPathFinder.h">
+      <Filter>Search Algorithms\Interface</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Graph.inl">
+      <Filter>Graph</Filter>
+    </None>
+    <None Include="Node.inl">
+      <Filter>Node</Filter>
+    </None>
+    <None Include="Point.inl">
+      <Filter>Point</Filter>
+    </None>
+    <None Include="StopWatch.inl">
+      <Filter>StopWatch</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Search Algorithms">
+      <UniqueIdentifier>{c8ee52ad-adaa-4702-964e-e7ed81940a7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graph">
+      <UniqueIdentifier>{c28c9109-5f18-4519-9070-852f85366990}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GridHelper">
+      <UniqueIdentifier>{da083b42-6a41-4087-8f59-16fb91fe9cf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Node">
+      <UniqueIdentifier>{b4ff8788-3d5d-41f3-86c6-0a4cba2f77f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Precompiled Header">
+      <UniqueIdentifier>{7bf4d072-1003-420a-825d-56c8b2e71975}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Point">
+      <UniqueIdentifier>{e24dfe60-8109-451b-8a43-6977df7fb3e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="StopWatch">
+      <UniqueIdentifier>{dac6ec90-3af7-4513-bde4-752dfd47a889}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{a97eb113-2fe5-4b3a-b1bf-9132a47dfbc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Search Algorithms\A%2a">
+      <UniqueIdentifier>{1a2b111c-47ed-4af6-b82d-edd0873ef5b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Search Algorithms\Breadth-First">
+      <UniqueIdentifier>{25192dfe-492b-457e-a0e0-08ce71388340}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Search Algorithms\Greedy Best-First">
+      <UniqueIdentifier>{2e027a44-bf13-4174-b9f0-c3bd7b436050}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Search Algorithms\Dijsktra%27s Algorithm">
+      <UniqueIdentifier>{5254b99b-0f39-4ff6-b3e2-1db968d3cf50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Search Algorithms\Interface">
+      <UniqueIdentifier>{3ad01948-7a25-4303-b097-ef3c4319016f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
