@@ -14,6 +14,11 @@ namespace Library
 	{
 	}
 
+	std::string BreadthFirstPathFinder::ToString()
+	{
+		return "Breadth-First Pathfinding";
+	}
+
 	deque<shared_ptr<Node>> BreadthFirstPathFinder::FindPath(shared_ptr<Node> start, shared_ptr<Node> end, set<shared_ptr<Node>>& closedSet)
 	{
 		deque<shared_ptr<Node>> path;

@@ -22,6 +22,7 @@ namespace Library
 
 		shared_ptr<Node> current = start;
 		parent[current] = nullptr;
+		parent[end] = nullptr;
 		closedSet.insert(current);
 
 		do
@@ -80,10 +81,19 @@ namespace Library
 		shared_ptr<Node> trail = end;
 		while (trail != nullptr)
 		{
+			if (parent[end] == nullptr)
+			{	// We don't bother constructing a path at all because we never reached the end
+				break;
+			}
 			result.push_back(trail);
 			trail = parent[trail];
 		}
 
 		return result;
+	}
+
+	std::string GreedyBestFirstPathFinder::ToString()
+	{
+		return "Greedy Best-First Pathfinding";
 	}
 }

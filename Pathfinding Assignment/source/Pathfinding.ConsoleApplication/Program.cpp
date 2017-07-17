@@ -209,36 +209,41 @@ void Update(sf::RenderWindow& window)
 				state = State::ChoosingStart;
 				chosenAlgorithm = SearchAlgorithms[4];
 			}
-		}
 
-		if (startChosen && event.key.code == sf::Keyboard::Space && state == State::ChoosingStart)
-		{
-			state = State::ChoosingEnd;
-		}
-		if (endChosen && event.key.code == sf::Keyboard::Space && state == State::ChoosingEnd)
-		{
-			state = State::DisplayingPath;
+			if (startChosen && event.key.code == sf::Keyboard::Space && state == State::ChoosingStart)
+			{
+				state = State::ChoosingEnd;
+			}
+			if (endChosen && event.key.code == sf::Keyboard::Space && state == State::ChoosingEnd)
+			{
+				state = State::DisplayingPath;
 
-			auto begin = graph.At(Library::Point(startIndex.x, startIndex.y));
-			auto end = graph.At(Library::Point(endIndex.x, endIndex.y));
+				auto begin = graph.At(Library::Point(startIndex.x, startIndex.y));
+				auto end = graph.At(Library::Point(endIndex.x, endIndex.y));
 
-			watch.Reset();
-			watch.Start();
-			path = chosenAlgorithm->FindPath(begin, end);
-			watch.Stop();
-			executionTime = watch.Elapsed().count() / 1000000.0f;
+				watch.Reset();
+				watch.Start();
+				path = chosenAlgorithm->FindPath(begin, end);
+				watch.Stop();
+				executionTime = watch.Elapsed().count() / 1000000.0f;
 
-			ApplyBaseGridColors();
-			ApplyPathColors(path);
-		}
+				ApplyBaseGridColors();
+				ApplyPathColors(path);
+			}
 
-		if (event.key.code == sf::Keyboard::LControl || event.key.code == sf::Keyboard::RControl && state == State::DisplayingPath)
-		{
-			Init();
+			if ((event.key.code == sf::Keyboard::LControl || event.key.code == sf::Keyboard::RControl) && 
+				state == State::DisplayingPath)
+			{
+				Init();
+			}
 		}
 	}
 
 	stringstream ss;
+	if (state == State::ChoosingStart || state == State::ChoosingEnd)
+	{
+		ss << chosenAlgorithm->ToString();
+	}
 	if (state == State::DisplayingPath)
 	{
 		ss << "Elapsed Time: " << executionTime << endl << endl;
@@ -316,7 +321,7 @@ void ApplyPathColors(const deque<shared_ptr<Library::Node>>& traversalPath)
 		auto position = iter->get()->Location();
 		displayGrid[position.X()][position.Y()].setFillColor(sf::Color(0, 196, 196));
 	}
-	if (startChosen && endChosen)
+	if (startChosen && endChosen && path.size() > 0)
 	{
 		displayGrid[startIndex.x][startIndex.y].setFillColor(sf::Color::Green);
 		displayGrid[endIndex.x][endIndex.y].setFillColor(sf::Color::Red);
