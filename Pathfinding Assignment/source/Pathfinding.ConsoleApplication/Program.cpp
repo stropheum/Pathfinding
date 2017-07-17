@@ -26,7 +26,7 @@ Choose a pathfinding option:\n \
 
 const string startChoiceInstructions = "Click to select a start node\nPress [Space] to confirm\n\n";
 const string endChoiceInstructions = "Click to select an end node\nPress [Space] to confirm\n\n";
-const string restartInstructions = "Press [Enter] to restart\n\n";
+const string restartInstructions = "Press [Ctrl] to restart\n\n";
 
 enum State
 {
@@ -232,7 +232,7 @@ void Update(sf::RenderWindow& window)
 			ApplyPathColors(path);
 		}
 
-		if (event.key.code == sf::Keyboard::Return && state == State::DisplayingPath)
+		if (event.key.code == sf::Keyboard::LControl || event.key.code == sf::Keyboard::RControl && state == State::DisplayingPath)
 		{
 			Init();
 		}
